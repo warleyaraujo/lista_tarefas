@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 500px;
+    left: 35%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: rgba(3, 3, 85, 0.233);
+    
+}
+
+header {
+    
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, 
+     rgba(2,0,36,1) 0%,
+     rgba(7,56,152,1) 38%, 
+     rgba(45,130,147,1) 59%,
+     rgba(9,9,121,1) 97%);
+
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 75%;
+    margin-right: 0;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+
+}
+
+.addBtn {
+    width: 25%;
+    padding: 10px;
+    margin-right: 0;
+    background: #6a0bc2;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.addBtn:hover {
+    background-color: white;
+    color: #6a0bc2;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    font-size: 14px;
+    transition: 0.2s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* MAKE THE LIST ITEMS UNSELECTABLE */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: #b2bec3;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: rgb(147, 197, 209);
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: "";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.far {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.far:hover {
+    background-color: rgba(9,9,121,1);
+    color: white;
+}
